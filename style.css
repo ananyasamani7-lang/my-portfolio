@@ -1,0 +1,135 @@
+/* --- General Page Style --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #dce7ff, #f5f7ff);
+  color: #0a1c3f;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* --- Header --- */
+header {
+  background: linear-gradient(90deg, #00296b, #00509d);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+  text-shadow: 0 0 8px #ffd700;
+}
+
+/* --- Intro Section --- */
+.intro {
+  text-align: center;
+  margin: 60px auto;
+  width: 80%;
+  background: #ffffffcc;
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 25px rgba(0, 40, 90, 0.15);
+  animation: fadeIn 1.5s ease;
+}
+
+.intro h2 {
+  color: #00296b;
+  font-size: 1.7em;
+}
+
+.intro h3 {
+  color: #003f88;
+  font-size: 1.8em;
+  margin-top: 5px;
+}
+
+/* --- Profile Image --- */
+.profile-img {
+  margin: 20px auto;
+  display: block;
+  border-radius: 50%;
+  border: 3px solid #ffd700;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+}
+
+/* --- Buttons --- */
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #003f88, #00509d);
+  color: white;
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 12px rgba(0, 40, 80, 0.3);
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #ffd700, #ffb700);
+  color: #00296b;
+  transform: scale(1.06);
+  box-shadow: 0 5px 20px rgba(255, 215, 0, 0.45);
+}
+
+/* --- Footer --- */
+footer {
+  background: #001f3f;
+  color: #e6e6e6;
+  text-align: center;
+  padding: 12px;
+  margin-top: 40px;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
+
+/* --- Biodata Table --- */
+.biodata-table th {
+  background: #003f88;
+  color: white;
+  padding: 10px;
+}
+
+.biodata-table td {
+  background: #f2f5ff;
+  color: #00296b;
+  padding: 10px;
+  border-bottom: 1px solid #c8d9ff;
+}
+
+/* --- Animations --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
